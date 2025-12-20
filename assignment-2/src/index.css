@@ -234,11 +234,12 @@ button {
 }
 
 
-.about .card3 .levels{
+.about .card3 .levels {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
+
 .about .card3 .levels .level {
   display: flex;
   align-items: center;
@@ -256,7 +257,8 @@ button {
   border-radius: 50px;
   background-color: skyblue;
 }
-.about .card3 .levels .level p{
+
+.about .card3 .levels .level p {
   font-size: 12px;
   font-weight: 500;
 }
@@ -308,24 +310,28 @@ button {
   font-weight: 400;
   font-size: 20px;
 }
-.aboutStats{
+
+.aboutStats {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 40px;
 }
-.aboutStats h3{
+
+.aboutStats h3 {
   font-size: 30px;
   font-weight: 500;
 }
-.aboutStats .stats{
+
+.aboutStats .stats {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.aboutStats .stats .stat{
+
+.aboutStats .stats .stat {
   width: 22%;
   text-align: center;
   padding: 10px;
@@ -333,7 +339,110 @@ button {
   flex-direction: column;
   gap: 10px;
 }
-.aboutStats .stats .stat h4{
+
+.aboutStats .stats .stat h4 {
   font-size: 30px;
   font-weight: 600;
+}
+
+.services {
+  padding-block: 100px;
+  border-top: 1px solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services .left {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.services .left h5 {
+  font-weight: 400;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 3px 10px;
+}
+
+.services .center {
+  width: 32%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-image: url("https://images.unsplash.com/photo-1593667306638-79a2ed57bb3a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.services .center .tag {
+  color: white;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.495);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.475);
+}
+
+.services .center .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .center .bottom h5 {
+  font-weight: 400;
+  width: 60%;
+}
+
+.services .right {
+  width: 32%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+
+}
+
+.services .right .card {
+  background-image: url("https://images.unsplash.com/photo-1634840670087-fa2cb0ee3ea1?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.services .right .card .tag {
+  color: white;
+  padding: 10px 15px;
+  font-size: 12px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.495);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.475);
+}
+
+.services .right .card .bottom h5 {
+  font-weight: 400;
+  width: 60%;
+}
+
+.services .right .para {
+  color: black;
+  font-size: 15px;
 }
