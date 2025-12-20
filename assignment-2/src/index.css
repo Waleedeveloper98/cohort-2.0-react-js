@@ -15,6 +15,12 @@ body {
   padding: 30px 40px;
 }
 
+.home {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 nav {
   width: 100%;
   display: flex;
@@ -49,7 +55,7 @@ nav .menu li a {
   padding: 5px 15px;
 }
 
-nav button {
+button {
   background-color: black;
   color: white;
   border: none;
@@ -58,4 +64,276 @@ nav button {
   cursor: pointer;
   border-radius: 50px;
   font-size: 16px;
+}
+
+.hero {
+  width: 100%;
+  height: 75vh;
+  border-radius: 20px;
+  background-image: url(../public/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heroContent {
+  color: rgb(255, 255, 255);
+}
+
+.heroContent .top {
+  padding: 50px 60px;
+  text-align: center;
+}
+
+.heroContent h1 {
+  line-height: 1;
+  font-weight: 600;
+  font-size: 40px;
+
+}
+
+.heroContent .top p {
+  font-size: 13px;
+  width: 57%;
+  margin: auto;
+  margin-block: 20px;
+}
+
+.heroContent .bottom {
+  margin-top: 60px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.heroContent .bottom .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroContent .bottom .left .professionals {
+  position: relative;
+  padding: 7px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.614);
+  display: flex;
+}
+
+.heroContent .bottom .left .professionals .user {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: green;
+}
+
+.heroContent .bottom .right {
+  display: flex;
+  gap: 20px;
+}
+
+.heroContent .bottom .right a {
+  text-decoration: underline;
+  color: white;
+}
+
+.about {
+  width: 100%;
+  padding-block: 50px;
+}
+
+.aboutHeader {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.aboutHeader h5 {
+  font-weight: 400;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid;
+}
+
+.aboutHeader p {
+  width: 60%;
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.about .cards {
+  margin-block: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+.about .card1 {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.about .card2 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: skyblue;
+  background-image: url("https://images.unsplash.com/photo-1541732099778-c38c01b6fc0c?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+}
+
+.about .card2 p {
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.495);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.475);
+}
+
+.about .card3 {
+  width: 30%;
+  padding: 20px 30px;
+  border-radius: 20px;
+  background-color: #F6F8FC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about .card3 .proText h3 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about .card3 .proText h4 {
+  font-weight: 500;
+}
+
+.about .card3 .proText p {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+.about .card3 .levels{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.about .card3 .levels .level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .card3 .levels .level .points {
+  display: flex;
+  gap: 3px;
+}
+
+.about .card3 .levels .level .point {
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  background-color: skyblue;
+}
+.about .card3 .levels .level p{
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.about .card1 .icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: white;
+}
+
+.about .card1 p {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: white;
+}
+
+.about .card1 p span {
+  color: #c1c1c1;
+}
+
+.about .card1 .bottom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.about .card1 .bottom .toggle {
+  width: 60px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: skyblue;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.about .card1 .bottom .toggle .circle {
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 5px solid white;
+  border-radius: 50px;
+}
+
+.about .card1 .bottom h6 {
+  color: #c1c1c1;
+  font-weight: 400;
+  font-size: 20px;
+}
+.aboutStats{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.aboutStats h3{
+  font-size: 30px;
+  font-weight: 500;
+}
+.aboutStats .stats{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aboutStats .stats .stat{
+  width: 22%;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aboutStats .stats .stat h4{
+  font-size: 30px;
+  font-weight: 600;
 }
