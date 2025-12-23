@@ -126,8 +126,20 @@ const App = () => {
   ];
 
   return (
-    <div className="bg-black flex flex-wrap justify-center items-start gap-10 p-20 w-full h-screen">
-      <UserCard />
+    <div className="bg-black flex flex-col gap-10 p-20 pt-10 w-full min-h-screen">
+      <div className="heading text-center">
+        <h2 className="text-white text-3xl font-semibold">
+          Talent Marketplace
+        </h2>
+        <h6 className="text-gray-300 font-medium">
+          Discover skilled professionals worldwide
+        </h6>
+      </div>
+      <div className="profiles flex flex-wrap justify-center items-start gap-10">
+        {users.map((user) => {
+          return <UserCard key={user.id} {...user} />;
+        })}
+      </div>
     </div>
   );
 };
