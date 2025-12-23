@@ -1,4 +1,5 @@
 import React from "react";
+import UserCard from "./components/UserCard";
 
 const App = () => {
   const users = [
@@ -124,7 +125,11 @@ const App = () => {
     },
   ];
 
-  return <div>App</div>;
+  return (
+    <div className="bg-black flex flex-wrap justify-center items-start gap-10 p-20 w-full h-screen">
+      <UserCard />
+    </div>
+  );
 };
 
 export default App;
