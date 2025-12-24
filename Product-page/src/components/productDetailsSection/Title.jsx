@@ -2,7 +2,7 @@ import React from 'react'
 
 const Title = () => {
   return (
-    <h1 className='text-[#432818] text-5xl font-medium'>
+    <h1 className='text-[#432818] text-4xl lg:text-5xl font-medium'>
         Paws Premium Chicken & Rice
     </h1>
   )
