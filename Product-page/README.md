@@ -1,16 +1,90 @@
-# React + Vite
+🐶 Pet Food E-commerce UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and clean Pet Food E-commerce Product Page UI built using React.js, Tailwind CSS, and Vite.
+This project focuses on component breaking, props drilling, and converting a real-world design into a scalable React UI.
 
-Currently, two official plugins are available:
+🎨 Design Credit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This UI is inspired by a Dribbble design by Antonina Panteley.
+The project is built strictly for learning and portfolio purposes.
 
-## React Compiler
+🎯 Project Objective
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The main goal of this project is to:
+Understand component decomposition
+Practice props drilling in React
+Build reusable UI components
+Follow a feature-based folder structure
+Improve real-world design-to-code skills
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+🛠 Tech Stack
+
+⚛️ React.js
+🎨 Tailwind CSS
+⚡ Vite
+🧩 Lucide Icons
+💻 JavaScript (ES6+)
+
+
+
+✨ Features
+
+Clean and modern e-commerce product UI
+Feature-based component structure
+Reusable and composable components
+Props-driven data flow
+Fully responsive design (Desktop, Tablet & Mobile)
+Well-organized and scalable folder structure
+
+
+
+📱 Responsive Design
+✔ Desktop
+✔ Tablet
+✔ Mobile
+
+
+
+🧩 Component Architecture
+
+UI is broken into small, focused components
+Each component has a single responsibility
+Data is passed via props to understand real React data flow
+Nested folders reflect real production UI structures
+Layout and logic are kept clean and readable
+
+
+
+🧪 Learning Outcomes
+
+Improved understanding of props drilling
+Better component naming and responsibility
+Confidence in breaking complex UIs into small pieces
+Hands-on experience with Tailwind utility-first styling
+Cleaner React project organization
+
+
+
+
+🖼 Preview
+Add a screenshot of the project UI here
+
+![Pet Food E-commerce UI](./src/assets/preview.png)
+
+
+⚠️ Disclaimer
+
+This project is UI only.
+No backend, authentication, or payment functionality is implemented.
+
+
+👤 Author
+Muhammad Waleed
+Frontend Developer (React.js)
+
+
+
+⭐ Credits
+UI Design: Antonina Panteley (Dribbble)
