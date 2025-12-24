@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className='max-w-7xl m-auto'>
       <Navbar />
-      <div className='px-0 py-3'>
+      <div className='px-0 py-3 lg:flex lg:bg-[#FAF8E7]'>
         <ProductImagesSection />
         <ProductDetails />
       </div>
