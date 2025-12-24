@@ -26,7 +26,7 @@ const Navbar = () => {
               <Search />
             </li>
             <li>
-              <Button text={"Login"}/>
+              <Button text={"Login"} px={"px-6"} py={"py-2"}/>
             </li>
           </ul>
         </div>
