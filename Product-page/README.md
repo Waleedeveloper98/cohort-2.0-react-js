@@ -73,7 +73,8 @@ Add a screenshot of the project UI here
 
 ![Pet Food E-commerce UI](./src/assets/preview.png)
 
-![Live Preview]: (https://cohort-2-0-react-js-1u1o.vercel.app/)
+🔗 **Live Demo:** [View Project](https://cohort-2-0-react-js-1u1o.vercel.app/)
+
 
 ⚠️ Disclaimer
 
