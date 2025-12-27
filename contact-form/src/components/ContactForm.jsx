@@ -6,7 +6,7 @@ const ContactForm = ({ formData, handleChange, handleSubmit }) => {
 
         <h2 className="text-3xl font-semibold mb-8">Contact Form</h2>
         
-      <form onSubmit={(e) => handleSubmit(e)} className="flex flex-col gap-8">
+      <form autoComplete="off" onSubmit={(e) => handleSubmit(e)} className="flex flex-col gap-8">
         <div className="form-input flex flex-col gap-1">
           <label className="font-medium" htmlFor="fullName">
             Full Name
