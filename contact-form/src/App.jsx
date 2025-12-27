@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ContactForm from "./components/ContactForm";
+import ContactList from "./components/ContactList";
 
 const App = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,8 @@ const App = () => {
     phone: "",
     profile: "",
   });
+
+  const [userList, setUserList] = useState([]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,16 +23,26 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData)
+    if(!formData.fullname || !formData.phone || !formData.profile){
+      alert("Please fill all the fields correctly!")
+      return
+    }
+    setUserList([...userList, formData]);
+    setFormData({
+      fullname: "",
+      phone: "",
+      profile: "",
+    });
   };
 
   return (
-    <div className="w-full h-screen min-h-screen bg-zinc-100 p-4 flex">
+    <div className="w-full min-h-screen bg-zinc-100 flex flex-col items-center md:flex-row md:items-start gap-4">
       <ContactForm
         formData={formData}
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
+      <ContactList userList={userList} />
     </div>
   );
 };
