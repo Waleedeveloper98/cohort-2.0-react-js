@@ -23,9 +23,9 @@ const App = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!formData.fullname || !formData.phone || !formData.profile){
-      alert("Please fill all the fields correctly!")
-      return
+    if (!formData.fullname || !formData.phone || !formData.profile) {
+      alert("Please fill all the fields correctly!");
+      return;
     }
     setUserList([...userList, formData]);
     setFormData({
@@ -35,6 +35,11 @@ const App = () => {
     });
   };
 
+  const handleDelete = (idx) => {
+    let newUserList = [...userList].filter((_, index) => index !== idx);
+    setUserList(newUserList)
+  };
+
   return (
     <div className="w-full min-h-screen bg-zinc-100 flex flex-col items-center md:flex-row md:items-start gap-4">
       <ContactForm
@@ -42,7 +47,7 @@ const App = () => {
         handleChange={handleChange}
         handleSubmit={handleSubmit}
       />
-      <ContactList userList={userList} />
+      <ContactList handleDelete={handleDelete} userList={userList} />
     </div>
   );
 };
