@@ -1,22 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Quicksand:wght@300..700&display=swap');
+
 @import "tailwindcss";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: poppins, sans-serif;
-}
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
 
 #full-cards-container {
   position: relative;
+  /* background: #c8d0e6; */
+  background-color: black;
+  /* background: linear-gradient(44deg, rgba(200, 208, 230, 1) 0%, rgba(238, 174, 202, 0.93) 84%); */
+}
+
+.topbar {
+  background: #FAEAF0;
+  background: linear-gradient(44deg, rgba(250, 234, 240, 1) 0%, rgba(237, 244, 251, 1) 54%, rgba(253, 249, 235, 0.93) 100%);
+}
+
+.baloo {
+  font-family: "Baloo 2", sans-serif;
+}
+
+.sand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.roll,
+.roll2 {
+  animation: spin 1s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+
+.roll2 {
+  animation-delay: .3s;
+}
+
+@keyframes spin {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2) rotate(180deg);
+  }
+
+}
+
+#card:hover .roll,
+#card:hover .roll2 {
+  animation-play-state: running;
+}
+
+.heart {
+  animation: heartBeat 2s linear infinite;
+}
+
+@keyframes heartBeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.shine::after {
+  content: "";
+  position: absolute;
   width: 100%;
-  min-height: 100vh;
-  background: #c8d0e6;
-  background: linear-gradient(44deg, rgba(200, 208, 230, 1) 0%, rgba(238, 174, 202, 0.93) 84%);
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .4), transparent);
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }

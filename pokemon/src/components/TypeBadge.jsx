@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const TypeBadge = () => {
+const TypeBadge = ({ typeName, badgeColor }) => {
   return (
-    <div>TypeBadge</div>
-  )
-}
+    <div
+      className={`baloo cursor-pointer text-sm font-bold tracking-wider px-4 py-2 rounded-full uppercase ${badgeColor}`}
+    >
+      {typeName}
+    </div>
+  );
+};
 
-export default TypeBadge
+export default TypeBadge;

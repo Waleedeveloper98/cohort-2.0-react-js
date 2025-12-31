@@ -1,9 +1,19 @@
-import React from 'react'
+import React from "react";
 
-const TypeTheme = () => {
+const TypeTheme = ({ colorsPalette }) => {
+  console.log(colorsPalette)
   return (
-    <div>TypeTheme</div>
-  )
-}
+    <div className="flex gap-1">
+      {colorsPalette.map((palette, i) => {
+          return (
+            <div
+              key={i}
+              className={`size-2 rounded-full ${palette}`}
+            ></div>
+          );
+        })}
+    </div>
+  );
+};
 
-export default TypeTheme
+export default TypeTheme;

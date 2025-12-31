@@ -1,8 +1,8 @@
 import React from 'react'
 
-const PokemonName = () => {
+const PokemonName = ({name}) => {
   return (
-    <div>PokemonName</div>
+    <h1 className='sand capitalize font-bold text-2xl'>{name}</h1>
   )
 }
 
