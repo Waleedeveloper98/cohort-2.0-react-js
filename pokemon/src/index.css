@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#full-cards-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #c8d0e6;
+  background: linear-gradient(44deg, rgba(200, 208, 230, 1) 0%, rgba(238, 174, 202, 0.93) 84%);
+}
